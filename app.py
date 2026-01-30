@@ -22,7 +22,7 @@ if uploaded_audio and user_question:
 
     processed_path = preprocess_audio(raw_path)
 
-    with st.spinner("Analyzing heartbeat with LLM..."):
+    with st.spinner("Analyzing heartbeat..."):
         response = chatbot.chat(processed_path, user_question)
 
     st.markdown("### 🤖 AI Response")
